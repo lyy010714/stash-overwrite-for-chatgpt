@@ -1,0 +1,12 @@
+---
+name: ChatGPT Quarantine
+desc: 为 ChatGPT 增加额外代理选项
+proxy-groups:
+  - name: ChatGPT
+    type: select
+    Proxies:
+    - "\U0001F9F1 GFW"
+rules:
+  - DOMAIN-SUFFIX,openai.com,ChatGPT
+  - DOMAIN-SUFFIX,sentry.io,ChatGPT
+
